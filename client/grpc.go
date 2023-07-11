@@ -14,8 +14,8 @@ import (
 )
 
 type Client struct {
-	networkClient     pactus.NetworkClient
-	conn              *grpc.ClientConn
+	NetworkClient     pactus.NetworkClient
+	Conn              *grpc.ClientConn
 }
 
 func NewClient(endpoint string) (*Client, error) {
@@ -28,14 +28,14 @@ func NewClient(endpoint string) (*Client, error) {
 	pp.Println("connection established...")
 
 	return &Client{
-		networkClient:     pactus.NewNetworkClient(conn),
-		conn:              conn,
+		NetworkClient:     pactus.NewNetworkClient(conn),
+		Conn:              conn,
 	}, nil
 
 }
 
 func (c *Client) GetNetworkInfo() (*pactus.GetNetworkInfoResponse, error) {
-	networkInfo, err := c.networkClient.GetNetworkInfo(context.Background(), &pactus.GetNetworkInfoRequest{})
+	networkInfo, err := c.NetworkClient.GetNetworkInfo(context.Background(), &pactus.GetNetworkInfoRequest{})
 	if err != nil {
 		log.Printf("error obtaining network information: %v", err)
 
@@ -64,5 +64,5 @@ func (c *Client) GetPeerInfo(address string) (*pactus.PeerInfo, *bls.PublicKey, 
 }
 
 func (c *Client) Close() error {
-	return c.conn.Close()
+	return c.Conn.Close()
 }
