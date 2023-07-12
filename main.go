@@ -4,10 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/kehiy/vv-pactus/client"
-	pactus "github.com/pactus-project/pactus/crypto/bls"
-	crypto "github.com/pactus-project/pactus/crypto"
-	"github.com/xuri/excelize/v2"
+	client "github.com/kehiy/vv-pactus/client"
+	"github.com/kehiy/vv-pactus/utils"
 )
 
 var status = make(map[int]string)
@@ -24,7 +22,7 @@ func main() {
 	status[3] = "noSynced"
 	status[4] = "invalid"
 
-	data, err := readExcel("data.xlsx", "Form Responses 1")
+	data, err := utils.ReadExcel("data.xlsx", "Form Responses 1")
 	if err != nil {
 		log.Fatalf("error reading data: %v", err)
 	}
@@ -42,23 +40,4 @@ func main() {
 		log.Fatalf("err read network info: %v", err)
 	}
 	fmt.Print(info)
-}
-
-func readExcel(file string, sheet string) ([][]string, error) {
-	f, err := excelize.OpenFile(file)
-	if err != nil {
-		return nil, err
-	}
-	defer f.Close()
-
-	rows, err := f.GetRows(sheet)
-	if err != nil {
-		return nil, err
-	}
-
-	return rows, nil
-}
-
-func addressFromPublicKey(pub pactus.PublicKey) crypto.Address {
-	return pub.Address()
 }
