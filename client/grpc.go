@@ -14,8 +14,8 @@ import (
 )
 
 type Client struct {
-	NetworkClient     pactus.NetworkClient
-	Conn              *grpc.ClientConn
+	NetworkClient pactus.NetworkClient
+	Conn          *grpc.ClientConn
 }
 
 func NewClient(endpoint string) (*Client, error) {
@@ -28,8 +28,8 @@ func NewClient(endpoint string) (*Client, error) {
 	pp.Println("connection established...")
 
 	return &Client{
-		NetworkClient:     pactus.NewNetworkClient(conn),
-		Conn:              conn,
+		NetworkClient: pactus.NewNetworkClient(conn),
+		Conn:          conn,
 	}, nil
 
 }
