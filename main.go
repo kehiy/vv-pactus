@@ -11,9 +11,9 @@ import (
 var status = make(map[int]string)
 
 type Result struct {
-	Address string
-	Discord string
-	Status  string
+	Address string `json:"adress"`
+	Discord string `json:"discord"`
+	Status  string `json:"status"`
 }
 
 func main() {
@@ -30,7 +30,7 @@ func main() {
 	fmt.Println(data)
 	fmt.Println(status)
 
-	c, err := client.NewClient("172.104.46.145:8080")
+	c, err := client.NewClient("172.104.46.145:9090")
 	if err != nil {
 		log.Fatalf("err making client: %v", err)
 	}
@@ -40,4 +40,10 @@ func main() {
 		log.Fatalf("err read network info: %v", err)
 	}
 	fmt.Print(info)
+
+	res, err := utils.AddressFromPublicKey("")
+	if err != nil {
+		log.Fatalf("error drive address from pubkey: %v", err)
+	}
+	fmt.Print(res)
 }
