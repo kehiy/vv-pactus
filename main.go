@@ -5,6 +5,8 @@ import (
 	"log"
 
 	"github.com/kehiy/vv-pactus/client"
+	pactus "github.com/pactus-project/pactus/crypto/bls"
+	crypto "github.com/pactus-project/pactus/crypto"
 	"github.com/xuri/excelize/v2"
 )
 
@@ -55,4 +57,8 @@ func readExcel(file string, sheet string) ([][]string, error) {
 	}
 
 	return rows, nil
+}
+
+func addressFromPublicKey(pub pactus.PublicKey) crypto.Address {
+	return pub.Address()
 }
