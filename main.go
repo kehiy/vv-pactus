@@ -45,5 +45,5 @@ func main() {
 	if err != nil {
 		log.Fatalf("error drive address from pubkey: %v", err)
 	}
-	fmt.Print(res)
+	fmt.Println("\n",res)
 }
