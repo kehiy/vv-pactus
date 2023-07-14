@@ -42,7 +42,7 @@ func main() {
 	}
 	fmt.Print(info)
 
-	res, err := utils.AddressFromPublicKey("tpublic1p3x4q7a9hu64r2vg27m9a586cvk8nzwxw9raf2ghdfmqqrdsdxktzsgu23kl5p8fsferyje2u8tww6petkydrj3vc8wuhrz8dvldq5z5w4dypxcufvz63rym7d4wjv4n5jvutw8439snva2m89zeqh3kc6qs3f2u9")
+	res, err := utils.AddressFromPublicKey("")
 	if err != nil {
 		log.Fatalf("error drive address from pubkey: %v", err)
 	}
