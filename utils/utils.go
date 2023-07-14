@@ -37,3 +37,12 @@ func Search(slice []string, target string) string {
 	}
 	return ""
 }
+
+func IsIn(s string, slice []string) bool {
+	for _, d := range slice {
+		if s == d {
+			return true
+		}
+	}
+	return false
+}
