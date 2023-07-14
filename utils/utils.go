@@ -21,10 +21,19 @@ func ReadExcel(file string, sheet string) ([][]string, error) {
 	return rows, nil
 }
 
-func AddressFromPublicKey(s string) (crypto.Address, error) {
+func AddressFromPublicKey(s string) string {
 	crypto.AddressHRP = "tpc"
 	crypto.PublicKeyHRP = "tpublic"
-	pub, err := pactus.PublicKeyFromString(s)
-	addr := pub.Address()
-	return addr, err
+	pub, _ := pactus.PublicKeyFromString(s)
+	addr := pub.Address().String()
+	return addr
+}
+
+func Search(slice []string, target string) string {
+	for _, value := range slice {
+		if value == target {
+			return value
+		}
+	}
+	return ""
 }

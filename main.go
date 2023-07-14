@@ -8,7 +8,10 @@ import (
 	"github.com/kehiy/vv-pactus/utils"
 )
 
-var status = make(map[int]string)
+var (
+	status = make(map[int]string)
+	validHeight uint32 = 557000
+) 
 
 type Result struct {
 	Address string `json:"adress"`
@@ -18,18 +21,15 @@ type Result struct {
 
 func main() {
 	status[1] = "valid"
-	status[2] = "offline"
-	status[3] = "noSynced"
-	status[4] = "invalid"
+	status[2] = "invalid"
+	status[3] = "notSynced"
+
 	result := []Result{}
 
 	data, err := utils.ReadExcel("data.xlsx", "Form Responses 1")
 	if err != nil {
 		log.Fatalf("error reading data: %v", err)
 	}
-
-	fmt.Println(data)
-	fmt.Println(status)
 
 	c, err := client.NewClient("172.104.46.145:9090")
 	if err != nil {
@@ -40,12 +40,21 @@ func main() {
 	if err != nil {
 		log.Fatalf("err read network info: %v", err)
 	}
-	fmt.Print(info)
 
-	res, err := utils.AddressFromPublicKey("")
-	if err != nil {
-		log.Fatalf("error drive address from pubkey: %v", err)
+	// check notSynced status
+	for _, d := range data {
+		r := Result{Address: d[1], Discord: d[0]}
+		for _, inf := range info.GetPeers() {
+			for _, k := range inf.ConsensusKeys {
+				if d[1] == utils.AddressFromPublicKey(k) {
+					if inf.Height < validHeight {
+						r.Status = status[3]
+						result = append(result, r)
+					}
+				}
+			}
+		}
 	}
-	fmt.Println("\n",res)
+
 	fmt.Println(result)
 }
