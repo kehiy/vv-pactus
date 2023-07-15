@@ -12,7 +12,6 @@ import (
 )
 
 var (
-	status             = make(map[int]string)
 	validHeight uint32 = 557000
 )
 
@@ -25,10 +24,6 @@ type Result struct {
 
 func main() {
 	s := time.Now()
-
-	status[1] = "valid"
-	status[2] = "duplicated"
-	status[3] = "notSynced"
 
 	result := []Result{}
 
@@ -58,22 +53,20 @@ func main() {
 			for _, k := range inf.ConsensusKeys {
 				addr = utils.AddressFromPublicKey(k)
 				if d[1] == addr {
+					status := "valid"
 					if inf.Height < validHeight {
-						r.Status = status[3]
-						r.PeerId = string(inf.GetPeerId())
-						result = append(result, r)
+						status = "notSynced"
 						break mainl
 					}
-					addr, ok := dup[string(inf.GetPeerId())]
+					index, ok := dup[string(inf.GetPeerId())]
 					if ok {
-						r.Status = status[2]
-						r.PeerId = string(inf.GetPeerId())
-						result = append(result, r)
+						status = "duplicate"
+						result[index].Status = "duplicate"
 						break mainl
 					}
 					
-					dup[string(inf.GetPeerId())] = addr
-					r.Status = status[1]
+					dup[string(inf.GetPeerId())] = len(result)
+					r.Status = status
 					r.PeerId = string(inf.GetPeerId())
 					result = append(result, r)
 				}
