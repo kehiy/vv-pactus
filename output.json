@@ -33,6 +33,18 @@
         "adress": "tpc1psjc0vsu829szdua5vt6w3d57vmk7nht737s5ke",
         "discord": "mehrdad kashi#8567",
         "status": "notSynced",
+        "peerid": "\u0000$\u0008\u0001\u0012 \ufffd\u0017\ufffdu0\u0000\ufffd\ufffdw\ufffd\ufffdI\ufffdwO\u0006\ufffd\ufffd\ufffd׊\ufffd\ufffd\u000e\ufffd\ufffdT\ufffd\ufffd\u000eXe"
+    },
+    {
+        "adress": "tpc1psjc0vsu829szdua5vt6w3d57vmk7nht737s5ke",
+        "discord": "mehrdad kashi#8567",
+        "status": "valid",
+        "peerid": "\u0000$\u0008\u0001\u0012 s\ufffd̺b\ufffdXC\ufffd\ufffd\u0007bc\u001d\ufffd\ufffd\ufffda\ufffdaKy5\ufffd\ufffd(о\u0017\ufffdfw"
+    },
+    {
+        "adress": "tpc1psjc0vsu829szdua5vt6w3d57vmk7nht737s5ke",
+        "discord": "mehrdad kashi#8567",
+        "status": "notSynced",
         "peerid": "\u0000$\u0008\u0001\u0012 %\ufffdD\ufffd\u0008\u0002\ufffdơ\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u001e\u0006\u00055\u003e3\ufffdo\u0019\u003e?\ufffd\ufffdx\ufffd"
     },
     {
@@ -182,7 +194,7 @@
     {
         "adress": "tpc1p5jmt6k006zwjwmktfcttltqlhyrlaz3x84rx4f",
         "discord": "yudf1d#8285",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 V\ufffdUa\u0016Ő\ufffd\ufffd\u0012;\ufffdFO\ufffd\ufffd\ufffdx\ufffdd\ufffd\ufffd\ufffd\ufffd\ufffdxh\ufffd,\u000e@s"
     },
     {
@@ -206,19 +218,19 @@
     {
         "adress": "tpc1p8486yaa97mp3wja0zdfuhl8392cydzj7t3ns3c",
         "discord": "AndriKurkur1#6287",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 V\ufffdUa\u0016Ő\ufffd\ufffd\u0012;\ufffdFO\ufffd\ufffd\ufffdx\ufffdd\ufffd\ufffd\ufffd\ufffd\ufffdxh\ufffd,\u000e@s"
     },
     {
         "adress": "tpc1pd362sz597jn5uz2spmkzyhf00g8ml2me03hvh3",
         "discord": "danielhardi1998#6429",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 V\ufffdUa\u0016Ő\ufffd\ufffd\u0012;\ufffdFO\ufffd\ufffd\ufffdx\ufffdd\ufffd\ufffd\ufffd\ufffd\ufffdxh\ufffd,\u000e@s"
     },
     {
         "adress": "tpc1pvuyngfgrdf05xdtyvffchkjzysl7fhqdymtfss",
         "discord": "yuresiha#3141",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 V\ufffdUa\u0016Ő\ufffd\ufffd\u0012;\ufffdFO\ufffd\ufffd\ufffdx\ufffdd\ufffd\ufffd\ufffd\ufffd\ufffdxh\ufffd,\u000e@s"
     },
     {
@@ -230,19 +242,19 @@
     {
         "adress": "tpc1pl8csyxyvsaupa5467phfwqu7qxnwv7g7f48syt",
         "discord": "AlexaPulish#4095",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 V\ufffdUa\u0016Ő\ufffd\ufffd\u0012;\ufffdFO\ufffd\ufffd\ufffdx\ufffdd\ufffd\ufffd\ufffd\ufffd\ufffdxh\ufffd,\u000e@s"
     },
     {
         "adress": "tpc1phe8s4r8xaz9s7wv3njx00u8xll426cam48ts0m",
         "discord": "AndikaPurbaaa#6637",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 V\ufffdUa\u0016Ő\ufffd\ufffd\u0012;\ufffdFO\ufffd\ufffd\ufffdx\ufffdd\ufffd\ufffd\ufffd\ufffd\ufffdxh\ufffd,\u000e@s"
     },
     {
         "adress": "tpc1pwdn5q3wqhtjswq268kzl9p8sezpckd93glmhz3",
         "discord": "PCornelo#4769",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 V\ufffdUa\u0016Ő\ufffd\ufffd\u0012;\ufffdFO\ufffd\ufffd\ufffdx\ufffdd\ufffd\ufffd\ufffd\ufffd\ufffdxh\ufffd,\u000e@s"
     },
     {
@@ -296,7 +308,7 @@
     {
         "adress": "tpc1pjlx8clugm8z8njfq4jwd85jt6ljew50fcsufrp",
         "discord": "leo2august",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 ?*\u000f\ufffd\ufffd\ufffd\ufffd\u001e\ufffd\ufffdz\ufffd\\F\ufffdO\ufffd\ufffd5H\u001c\u001b9\ufffd*L\ufffd=M\ufffda\ufffd"
     },
     {
@@ -308,7 +320,7 @@
     {
         "adress": "tpc1p0dvh2exhavhg7897t4llnsquvuhhnn82jlcc37",
         "discord": "zkcross",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 ?*\u000f\ufffd\ufffd\ufffd\ufffd\u001e\ufffd\ufffdz\ufffd\\F\ufffdO\ufffd\ufffd5H\u001c\u001b9\ufffd*L\ufffd=M\ufffda\ufffd"
     },
     {
@@ -320,7 +332,7 @@
     {
         "adress": "tpc1pynammdgp992hskyuq8eekj24heaelsp7yx3kg2",
         "discord": "lischy",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 ?*\u000f\ufffd\ufffd\ufffd\ufffd\u001e\ufffd\ufffdz\ufffd\\F\ufffdO\ufffd\ufffd5H\u001c\u001b9\ufffd*L\ufffd=M\ufffda\ufffd"
     },
     {
@@ -350,19 +362,19 @@
     {
         "adress": "tpc1pst5f8agy0w87te4zh3q8lq6qj9d8wwafa3s5da",
         "discord": "zeroluck00",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 ?*\u000f\ufffd\ufffd\ufffd\ufffd\u001e\ufffd\ufffdz\ufffd\\F\ufffdO\ufffd\ufffd5H\u001c\u001b9\ufffd*L\ufffd=M\ufffda\ufffd"
     },
     {
         "adress": "tpc1px5rgcwkfez55e6xrax262ppal4s0znr7lcrwzc",
         "discord": "zkfund",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 ?*\u000f\ufffd\ufffd\ufffd\ufffd\u001e\ufffd\ufffdz\ufffd\\F\ufffdO\ufffd\ufffd5H\u001c\u001b9\ufffd*L\ufffd=M\ufffda\ufffd"
     },
     {
         "adress": "tpc1ptynft0hl35j9u553fypy6g97uq5wuj5zweqlgp",
         "discord": "compound0",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 ?*\u000f\ufffd\ufffd\ufffd\ufffd\u001e\ufffd\ufffdz\ufffd\\F\ufffdO\ufffd\ufffd5H\u001c\u001b9\ufffd*L\ufffd=M\ufffda\ufffd"
     },
     {
@@ -386,7 +398,7 @@
     {
         "adress": "tpc1pw500l3c7h997mwydkl4w0mrrmaqeacpgxat90n",
         "discord": "unyiel",
-        "status": "valid",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffdE\ufffd\u0005\u0019\u001d\u0002j*]\ufffd\ufffd(\ufffd\ufffd\ufffd\u0013\ufffd\ufffd3\ufffd\ufffd\ufffd\t\ufffd\ufffd\ufffd\u003c\ufffd\ufffd\u0003"
     },
     {
@@ -422,8 +434,20 @@
     {
         "adress": "tpc1pkpvdu7u5u8m2hx807fczvngt99r75d6pe6s6ls",
         "discord": "cryptolop",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffd9%\ufffd\\\ufffd=\u0000d\ufffdNy\\{\ufffd\ufffda\ufffd\ufffda\ufffd\u003e\ufffd\ufffd`\ufffd\ufffd\u0015\t\ufffd{\ufffd"
+    },
+    {
+        "adress": "tpc1phv4rwpx7nwxpfzt2dwr42d8q4demwgxhnm8dgx",
+        "discord": "frankie0042",
+        "status": "valid",
+        "peerid": "\u0000$\u0008\u0001\u0012 \ufffdY\u0019\u001ańN\u0006\ufffd\ufffdv\ufffd̻\u0015\u0005\ufffd\ufffd\ufffd\ufffdv\u001f\ufffd9\ufffd\u0000/\t\ufffd\ufffd\u001a("
+    },
+    {
+        "adress": "tpc1phv4rwpx7nwxpfzt2dwr42d8q4demwgxhnm8dgx",
+        "discord": "frankie0042",
+        "status": "notSynced",
+        "peerid": "\u0000$\u0008\u0001\u0012 \ufffdڍ\u0008*\u001b\ufffd\ufffd1\ufffdP\u0015$V\ufffd\u000b-p\ufffdI\u0017!\ufffd\ufffd\u000c\ufffd(\"\ufffd\ufffdk;"
     },
     {
         "adress": "tpc1phv4rwpx7nwxpfzt2dwr42d8q4demwgxhnm8dgx",
@@ -500,7 +524,7 @@
     {
         "adress": "tpc1p240wsdu6ds74kfusvyd5d8573dnj4vd7433aew",
         "discord": "nakal1054",
-        "status": "invalid",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffdE\ufffd\u0005\u0019\u001d\u0002j*]\ufffd\ufffd(\ufffd\ufffd\ufffd\u0013\ufffd\ufffd3\ufffd\ufffd\ufffd\t\ufffd\ufffd\ufffd\u003c\ufffd\ufffd\u0003"
     },
     {
@@ -512,13 +536,25 @@
     {
         "adress": "tpc1pdduwd4nvskv38mxn3g0v2ulgxrxwxxsksx8tc4",
         "discord": "haris7187",
-        "status": "notSynced",
+        "status": "duplicate",
+        "peerid": "\u0000$\u0008\u0001\u0012 \ufffd\u001a\ufffd\u0026\ufffd\ufffd\u0013\ufffd\ufffd1\ufffd\ufffd\u0015\ufffd\ufffd\ufffd\ufffds(\ufffd]4\ufffd\u0010\ufffd\u0001\ufffd\ufffd\ufffd\ufffd\u001d\ufffd"
+    },
+    {
+        "adress": "tpc1pdduwd4nvskv38mxn3g0v2ulgxrxwxxsksx8tc4",
+        "discord": "haris7187",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffdx\ufffd\u001d\ufffd\"e\u0012KoD\ufffd~q \ufffd\ufffd.\u003e\ufffd\ufffd\ufffd+\ufffd15Max{\ufffd\ufffd"
     },
     {
         "adress": "tpc1p66l450a8a48apeeha29aqa3u3e9udsw60qvzeu",
         "discord": "_harcan",
-        "status": "notSynced",
+        "status": "duplicate",
+        "peerid": "\u0000$\u0008\u0001\u0012 \ufffd\u001a\ufffd\u0026\ufffd\ufffd\u0013\ufffd\ufffd1\ufffd\ufffd\u0015\ufffd\ufffd\ufffd\ufffds(\ufffd]4\ufffd\u0010\ufffd\u0001\ufffd\ufffd\ufffd\ufffd\u001d\ufffd"
+    },
+    {
+        "adress": "tpc1p66l450a8a48apeeha29aqa3u3e9udsw60qvzeu",
+        "discord": "_harcan",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffdx\ufffd\u001d\ufffd\"e\u0012KoD\ufffd~q \ufffd\ufffd.\u003e\ufffd\ufffd\ufffd+\ufffd15Max{\ufffd\ufffd"
     },
     {
@@ -536,31 +572,61 @@
     {
         "adress": "tpc1pyqxeq6n9n2qcc86trg0t7upzvyy92xvtkfn6lk",
         "discord": "blacan#6803",
-        "status": "notSynced",
+        "status": "duplicate",
+        "peerid": "\u0000$\u0008\u0001\u0012 \ufffd\u001a\ufffd\u0026\ufffd\ufffd\u0013\ufffd\ufffd1\ufffd\ufffd\u0015\ufffd\ufffd\ufffd\ufffds(\ufffd]4\ufffd\u0010\ufffd\u0001\ufffd\ufffd\ufffd\ufffd\u001d\ufffd"
+    },
+    {
+        "adress": "tpc1pyqxeq6n9n2qcc86trg0t7upzvyy92xvtkfn6lk",
+        "discord": "blacan#6803",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffdx\ufffd\u001d\ufffd\"e\u0012KoD\ufffd~q \ufffd\ufffd.\u003e\ufffd\ufffd\ufffd+\ufffd15Max{\ufffd\ufffd"
     },
     {
         "adress": "tpc1p9wdmkarl3rh9gnkdg39ndjmy3qvsas85tsm2ag",
         "discord": "gerujikol#3378",
-        "status": "notSynced",
+        "status": "duplicate",
+        "peerid": "\u0000$\u0008\u0001\u0012 \ufffd\u001a\ufffd\u0026\ufffd\ufffd\u0013\ufffd\ufffd1\ufffd\ufffd\u0015\ufffd\ufffd\ufffd\ufffds(\ufffd]4\ufffd\u0010\ufffd\u0001\ufffd\ufffd\ufffd\ufffd\u001d\ufffd"
+    },
+    {
+        "adress": "tpc1p9wdmkarl3rh9gnkdg39ndjmy3qvsas85tsm2ag",
+        "discord": "gerujikol#3378",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffdx\ufffd\u001d\ufffd\"e\u0012KoD\ufffd~q \ufffd\ufffd.\u003e\ufffd\ufffd\ufffd+\ufffd15Max{\ufffd\ufffd"
     },
     {
         "adress": "tpc1pnp23h39d4r2xax5ggcrqflvvasf36zhpmhx3pl",
         "discord": "menrini#6649",
-        "status": "notSynced",
+        "status": "duplicate",
+        "peerid": "\u0000$\u0008\u0001\u0012 \ufffd\u001a\ufffd\u0026\ufffd\ufffd\u0013\ufffd\ufffd1\ufffd\ufffd\u0015\ufffd\ufffd\ufffd\ufffds(\ufffd]4\ufffd\u0010\ufffd\u0001\ufffd\ufffd\ufffd\ufffd\u001d\ufffd"
+    },
+    {
+        "adress": "tpc1pnp23h39d4r2xax5ggcrqflvvasf36zhpmhx3pl",
+        "discord": "menrini#6649",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffdx\ufffd\u001d\ufffd\"e\u0012KoD\ufffd~q \ufffd\ufffd.\u003e\ufffd\ufffd\ufffd+\ufffd15Max{\ufffd\ufffd"
     },
     {
         "adress": "tpc1ph3gpkyjkgzwf9mfu43w6spwx0jma9hh9p6txx5",
         "discord": "opulan#4307",
-        "status": "notSynced",
+        "status": "duplicate",
+        "peerid": "\u0000$\u0008\u0001\u0012 \ufffd\u001a\ufffd\u0026\ufffd\ufffd\u0013\ufffd\ufffd1\ufffd\ufffd\u0015\ufffd\ufffd\ufffd\ufffds(\ufffd]4\ufffd\u0010\ufffd\u0001\ufffd\ufffd\ufffd\ufffd\u001d\ufffd"
+    },
+    {
+        "adress": "tpc1ph3gpkyjkgzwf9mfu43w6spwx0jma9hh9p6txx5",
+        "discord": "opulan#4307",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffdx\ufffd\u001d\ufffd\"e\u0012KoD\ufffd~q \ufffd\ufffd.\u003e\ufffd\ufffd\ufffd+\ufffd15Max{\ufffd\ufffd"
     },
     {
         "adress": "tpc1py3lgt4ttr62epcanphff2x6ld84csz9e4rtllp",
         "discord": "sykaka#5319",
-        "status": "notSynced",
+        "status": "duplicate",
+        "peerid": "\u0000$\u0008\u0001\u0012 \ufffd\u001a\ufffd\u0026\ufffd\ufffd\u0013\ufffd\ufffd1\ufffd\ufffd\u0015\ufffd\ufffd\ufffd\ufffds(\ufffd]4\ufffd\u0010\ufffd\u0001\ufffd\ufffd\ufffd\ufffd\u001d\ufffd"
+    },
+    {
+        "adress": "tpc1py3lgt4ttr62epcanphff2x6ld84csz9e4rtllp",
+        "discord": "sykaka#5319",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffdx\ufffd\u001d\ufffd\"e\u0012KoD\ufffd~q \ufffd\ufffd.\u003e\ufffd\ufffd\ufffd+\ufffd15Max{\ufffd\ufffd"
     },
     {
@@ -596,7 +662,7 @@
     {
         "adress": "tpc1p5cnzt9n00a0qtz3d84lv9zg92pew3emnmyda8d",
         "discord": "cuan_indo",
-        "status": "valid",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffd\ufffd\ufffd\ufffd\ufffd\u0006\ufffd\ufffdp\ufffd\ufffd\r\u0018D\ufffd\ufffdƾ\ufffd\ufffd\ufffd\ufffd\ufffd?\ufffd_\ufffdU7\ufffd|\ufffd"
     },
     {
@@ -656,7 +722,7 @@
     {
         "adress": "tpc1pd3stwqy6xcvcsp98j0c7dfnfqk4wp5ev9zfpk6",
         "discord": "cariuang15",
-        "status": "notSynced",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffd9%\ufffd\\\ufffd=\u0000d\ufffdNy\\{\ufffd\ufffda\ufffd\ufffda\ufffd\u003e\ufffd\ufffd`\ufffd\ufffd\u0015\t\ufffd{\ufffd"
     },
     {
@@ -692,7 +758,7 @@
     {
         "adress": "tpc1pjfmcgw0xg3h2uh0yqzztqz53542zd046tu3dmr",
         "discord": "cuan_indo",
-        "status": "invalid",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffd\ufffd\ufffd\ufffd\ufffd\u0006\ufffd\ufffdp\ufffd\ufffd\r\u0018D\ufffd\ufffdƾ\ufffd\ufffd\ufffd\ufffd\ufffd?\ufffd_\ufffdU7\ufffd|\ufffd"
     },
     {
@@ -718,6 +784,12 @@
         "discord": "thaitokenlegends#3619",
         "status": "valid",
         "peerid": "\u0000$\u0008\u0001\u0012 \\\ufffd\u0000{\ufffd\ufffd\ufffd\ufffd9j\ufffd\u001d\ufffd\u001d\rUJ`\"p\u0017j\ufffd\u0003\ufffdpmw\ufffd\t\\\u001e"
+    },
+    {
+        "adress": "tpc1pcj8rp29nudfgp0sh9ng33xu9vtrmx4xhnrjndl",
+        "discord": ".shazoe",
+        "status": "notSynced",
+        "peerid": "\u0000$\u0008\u0001\u0012 \u0007\ufffd\ufffd~\ufffdS\u0011\ufffd\ufffdK\u0016\tB\ufffd\ufffd\u0019T\\W\ufffd\r\ufffdͧ\ufffd\ufffd\u0016\ufffd\u000c\ufffd7\ufffd"
     },
     {
         "adress": "tpc1pcj8rp29nudfgp0sh9ng33xu9vtrmx4xhnrjndl",
@@ -878,13 +950,13 @@
     {
         "adress": "tpc1pzsrvc88cexrnag7g2rgjt2f4qquge9dyemtcek",
         "discord": "Invalid_validator",
-        "status": "valid",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffd\ufffd\ufffdU\u0015\ufffd\ufffd\ufffd\ufffd!a\ufffd]\ufffdS\ufffdZٟ\ufffdP\ufffd\u003e\ufffd\"!`\ufffd\u0017T\u000b\ufffd"
     },
     {
         "adress": "tpc1php0s9t7e0w2nvn7g6p3r4a5wj2auu6e4ckqh5x",
         "discord": "laedrei",
-        "status": "invalid",
+        "status": "duplicate",
         "peerid": "\u0000$\u0008\u0001\u0012 \ufffd\ufffd\ufffdU\u0015\ufffd\ufffd\ufffd\ufffd!a\ufffd]\ufffdS\ufffdZٟ\ufffdP\ufffd\u003e\ufffd\"!`\ufffd\u0017T\u000b\ufffd"
     }
 ]
