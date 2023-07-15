@@ -48,7 +48,6 @@ func main() {
 	for _, d := range data {
 		r := Result{Address: d[1], Discord: d[0]}
 		var addr string
-	mainl:
 		for _, inf := range info.GetPeers() {
 			for _, k := range inf.ConsensusKeys {
 				addr = utils.AddressFromPublicKey(k)
@@ -56,16 +55,15 @@ func main() {
 					status := "valid"
 					if inf.Height < validHeight {
 						status = "notSynced"
-						break mainl
 					}
 					index, ok := dup[string(inf.GetPeerId())]
 					if ok {
 						status = "duplicate"
 						result[index].Status = "duplicate"
-						break mainl
+					} else {
+						dup[string(inf.GetPeerId())] = len(result)
 					}
-					
-					dup[string(inf.GetPeerId())] = len(result)
+
 					r.Status = status
 					r.PeerId = string(inf.GetPeerId())
 					result = append(result, r)
