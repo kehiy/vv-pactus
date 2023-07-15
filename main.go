@@ -20,13 +20,14 @@ type Result struct {
 	Address string `json:"adress"`
 	Discord string `json:"discord"`
 	Status  string `json:"status"`
+	PeerId  string `json:"peerid"`
 }
 
 func main() {
 	s := time.Now()
 
 	status[1] = "valid"
-	status[2] = "invalid"
+	status[2] = "duplicated"
 	status[3] = "notSynced"
 
 	result := []Result{}
@@ -46,33 +47,35 @@ func main() {
 		log.Fatalf("err read network info: %v", err)
 	}
 
-	dup := []string{}
+	dup := make(map[string]int)
 
 	// check status
 	for _, d := range data {
 		r := Result{Address: d[1], Discord: d[0]}
-		var pub string
+		var addr string
 	mainl:
 		for _, inf := range info.GetPeers() {
 			for _, k := range inf.ConsensusKeys {
-				pub = utils.AddressFromPublicKey(k)
-				if d[1] == pub {
+				addr = utils.AddressFromPublicKey(k)
+				if d[1] == addr {
 					if inf.Height < validHeight {
 						r.Status = status[3]
+						r.PeerId = string(inf.GetPeerId())
 						result = append(result, r)
 						break mainl
 					}
-					for _, p := range dup {
-						if d[1] == p {
-							r.Status = status[2]
-							result = append(result, r)
-							break mainl
-						}
+					addr, ok := dup[string(inf.GetPeerId())]
+					if ok {
+						r.Status = status[2]
+						r.PeerId = string(inf.GetPeerId())
+						result = append(result, r)
+						break mainl
 					}
-
+					
+					dup[string(inf.GetPeerId())] = addr
 					r.Status = status[1]
+					r.PeerId = string(inf.GetPeerId())
 					result = append(result, r)
-					dup = append(dup, pub)
 				}
 			}
 		}
@@ -83,7 +86,7 @@ func main() {
 		log.Fatalf("err marshal result: %v", err)
 	}
 
-	outputFile, err := os.Create("output3.json")
+	outputFile, err := os.Create("output.json")
 	if err != nil {
 		log.Fatalf("err create file: %v", err)
 	}
