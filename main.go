@@ -36,7 +36,7 @@ func main() {
 		log.Fatalf("error reading data: %v", err)
 	}
 
-	c, err := client.NewClient("94.101.184.118:9090")
+	c, err := client.NewClient("172.104.46.145:9090")
 	if err != nil {
 		log.Fatalf("err making client: %v", err)
 	}
@@ -72,9 +72,8 @@ func main() {
 
 					r.Status = status[1]
 					result = append(result, r)
-					break mainl
+					dup = append(dup, pub)
 				}
-				dup = append(dup, pub)
 			}
 		}
 	}
@@ -84,7 +83,7 @@ func main() {
 		log.Fatalf("err marshal result: %v", err)
 	}
 
-	outputFile, err := os.Create("output.json")
+	outputFile, err := os.Create("output3.json")
 	if err != nil {
 		log.Fatalf("err create file: %v", err)
 	}
