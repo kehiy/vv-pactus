@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	validHeight uint32 = 557000
+	validHeight uint32 = 600000
 )
 
 type Result struct {
