@@ -14,8 +14,9 @@ import (
 )
 
 type Client struct {
-	NetworkClient pactus.NetworkClient
-	Conn          *grpc.ClientConn
+	NetworkClient    pactus.NetworkClient
+	BlockchainClient pactus.BlockchainClient
+	Conn             *grpc.ClientConn
 }
 
 func NewClient(endpoint string) (*Client, error) {
@@ -28,8 +29,9 @@ func NewClient(endpoint string) (*Client, error) {
 	pp.Println("connection established...")
 
 	return &Client{
-		NetworkClient: pactus.NewNetworkClient(conn),
-		Conn:          conn,
+		NetworkClient:    pactus.NewNetworkClient(conn),
+		BlockchainClient: pactus.NewBlockchainClient(conn),
+		Conn:             conn,
 	}, nil
 
 }
@@ -61,6 +63,17 @@ func (c *Client) GetPeerInfo(address string) (*pactus.PeerInfo, *bls.PublicKey, 
 		}
 	}
 	return nil, nil, errors.New("peer does not exist")
+}
+
+func (c *Client) GetValidatorInfo(address string) (*pactus.GetValidatorResponse, error) {
+	v, err := c.BlockchainClient.GetValidator(context.Background(), &pactus.GetValidatorRequest{Address: address})
+	if err != nil {
+		log.Printf("error obtaining validator information: %v", err)
+
+		return nil, err
+	}
+
+	return v, nil
 }
 
 func (c *Client) Close() error {

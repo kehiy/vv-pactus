@@ -9,6 +9,7 @@ import (
 
 	client "github.com/kehiy/vv-pactus/client"
 	"github.com/kehiy/vv-pactus/utils"
+	"github.com/libp2p/go-libp2p/core/peer"
 )
 
 var (
@@ -16,10 +17,14 @@ var (
 )
 
 type Result struct {
-	Address string `json:"adress"`
-	Discord string `json:"discord"`
-	Status  string `json:"status"`
-	PeerId  string `json:"peerid"`
+	ID          int    `json:"id"`
+	Address     string `json:"address"`
+	Discord     string `json:"discord"`
+	DiscordHide string `json:"discordhide"`
+	Status      string `json:"status"`
+	PeerId      string `json:"peerid"`
+	ValNum      int32  `json:"validaornumber"`
+	ValSeq      int32  `json:"validaorseq"`
 }
 
 func main() {
@@ -46,6 +51,9 @@ func main() {
 
 	// check status
 	for _, d := range data {
+		if len(d) == 1 {
+			continue
+		}
 		r := Result{Address: d[1], Discord: d[0]}
 		var addr string
 		for _, inf := range info.GetPeers() {
@@ -65,7 +73,15 @@ func main() {
 					}
 
 					r.Status = status
-					r.PeerId = string(inf.GetPeerId())
+					pid, _ := peer.IDFromBytes(inf.GetPeerId())
+					r.PeerId = pid.String()
+					r.ID = len(result) + 1
+					r.DiscordHide = utils.HideId(r.Discord)
+					validatorInfo, err := c.GetValidatorInfo(r.Address)
+					if err == nil {
+						r.ValNum = validatorInfo.Validator.Number
+						r.ValSeq = validatorInfo.Validator.Sequence
+					}
 					result = append(result, r)
 				}
 			}

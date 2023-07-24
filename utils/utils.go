@@ -1,6 +1,8 @@
 package utils
 
 import (
+	"strings"
+
 	"github.com/pactus-project/pactus/crypto"
 	pactus "github.com/pactus-project/pactus/crypto/bls"
 	"github.com/xuri/excelize/v2"
@@ -45,4 +47,16 @@ func IsIn(s string, slice []string) bool {
 		}
 	}
 	return false
+}
+
+func HideId(input string) string {
+	if len(input) < 2 {
+		return input
+	}
+
+	first := string(input[0])
+	last := string(input[len(input)-1])
+	stars := strings.Repeat("*", 10)
+
+	return first + stars + last
 }
