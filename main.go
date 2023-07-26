@@ -55,15 +55,12 @@ func main() {
 
 	// check status
 	for _, d := range data {
-		if len(d) == 1 {
-			continue
-		}
 		r := Result{Address: d[3], Discord: d[0], Twitter: d[1], Instagram: d[2]}
 		var addr string
 		for _, inf := range info.GetPeers() {
 			for _, k := range inf.ConsensusKeys {
 				addr = utils.AddressFromPublicKey(k)
-				if d[1] == addr {
+				if d[3] == addr {
 					status := "valid"
 					if inf.Height < validHeight {
 						status = "notSynced"
@@ -72,17 +69,19 @@ func main() {
 					if ok {
 						status = "duplicate"
 						result[index].Status = "duplicate"
-					} else {
-						dup[string(inf.GetPeerId())] = len(result)
+						} else {
+							dup[string(inf.GetPeerId())] = len(result)
 					}
-
+					
 					r.Status = status
 					pid, _ := peer.IDFromBytes(inf.GetPeerId())
 					r.PeerId = pid.String()
 					r.ID = len(result) + 1
+					
 					r.DiscordHide = utils.HideId(r.Discord)
 					r.InstagramHide = utils.HideId(r.Instagram)
 					r.TwitterHide = utils.HideId(r.Twitter)
+					
 					validatorInfo, err := c.GetValidatorInfo(r.Address)
 					if err == nil {
 						r.ValNum = validatorInfo.Validator.Number
@@ -93,7 +92,7 @@ func main() {
 			}
 		}
 	}
-
+	
 	fin, err := json.Marshal(result)
 	if err != nil {
 		log.Fatalf("err marshal result: %v", err)
