@@ -17,14 +17,18 @@ var (
 )
 
 type Result struct {
-	ID          int    `json:"id"`
-	Address     string `json:"address"`
-	Discord     string `json:"discord"`
-	DiscordHide string `json:"discordhide"`
-	Status      string `json:"status"`
-	PeerId      string `json:"peerid"`
-	ValNum      int32  `json:"validaornumber"`
-	ValSeq      int32  `json:"validaorseq"`
+	ID            int    `json:"id"`
+	Address       string `json:"address"`
+	Discord       string `json:"discord"`
+	DiscordHide   string `json:"discordhide"`
+	Instagram     string `json:"instagram"`
+	InstagramHide string `json:"instagramhide"`
+	Twitter       string `json:"twitter"`
+	TwitterHide   string `json:"twitterhide"`
+	Status        string `json:"status"`
+	PeerId        string `json:"peerid"`
+	ValNum        int32  `json:"validaornumber"`
+	ValSeq        int32  `json:"validaorseq"`
 }
 
 func main() {
@@ -54,7 +58,7 @@ func main() {
 		if len(d) == 1 {
 			continue
 		}
-		r := Result{Address: d[1], Discord: d[0]}
+		r := Result{Address: d[3], Discord: d[0], Twitter: d[1], Instagram: d[2]}
 		var addr string
 		for _, inf := range info.GetPeers() {
 			for _, k := range inf.ConsensusKeys {
@@ -77,6 +81,8 @@ func main() {
 					r.PeerId = pid.String()
 					r.ID = len(result) + 1
 					r.DiscordHide = utils.HideId(r.Discord)
+					r.InstagramHide = utils.HideId(r.Instagram)
+					r.TwitterHide = utils.HideId(r.Twitter)
 					validatorInfo, err := c.GetValidatorInfo(r.Address)
 					if err == nil {
 						r.ValNum = validatorInfo.Validator.Number
